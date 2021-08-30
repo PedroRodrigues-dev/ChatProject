@@ -1,0 +1,53 @@
+<form id="chat" class="mx-3 my-3">
+
+  <div class="messages" style="overflow:auto;"></div>
+  <div class="container">
+    <div class="row my-3">
+      <div class="col-8">
+        <input
+          id="inputMessage"
+          type="text"
+          class="form-control"
+          name="message"
+          placeholder="Digite sua menssagem"
+        />
+      </div>
+      <div class="col-1">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="Login"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <form id="login">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+        </div>
+        <div class="modal-body">
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            placeholder="Digite seu usuário"
+          />
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="/js/socketConf.js"></script>
